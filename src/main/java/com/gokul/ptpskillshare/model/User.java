@@ -5,7 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
-import org.antlr.v4.runtime.misc.NotNull;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -27,6 +28,12 @@ public class User {
 
     @NonNull
     private String bio;
+
+    @NonNull
+    private List<Skill> learning;
+
+    @NonNull
+    private List<Skill> teaching;
 
 
 }
