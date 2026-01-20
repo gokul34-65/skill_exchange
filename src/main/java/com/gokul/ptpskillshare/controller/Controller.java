@@ -14,6 +14,8 @@ public class Controller {
         return "Hello world";
     }
 
+    @GetMapping("/hi")
+    int num(){return 7;}
 
 
 

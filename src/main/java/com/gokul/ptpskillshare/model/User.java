@@ -17,7 +17,7 @@ import org.antlr.v4.runtime.misc.NotNull;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private Long userId;
+    private String userId;
 
     @NonNull
     private String email;
