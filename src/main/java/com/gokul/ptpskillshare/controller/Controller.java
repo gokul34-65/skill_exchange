@@ -1,9 +1,8 @@
 package com.gokul.ptpskillshare.controller;
 
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.gokul.ptpskillshare.model.Skill;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
@@ -14,10 +13,13 @@ public class Controller {
         return "Hello world";
     }
 
-    @GetMapping("/hi")
+    @GetMapping("hi")
     int num(){return 7;}
 
-
+    @PostMapping("/teaching")
+    Skill addTeachingSkills(@RequestBody Skill skill){
+        return skill;
+    }
 
     
 }
