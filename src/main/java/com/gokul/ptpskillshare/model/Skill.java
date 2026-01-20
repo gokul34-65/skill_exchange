@@ -1,6 +1,5 @@
 package com.gokul.ptpskillshare.model;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,14 +8,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Skills {
+public class Skill {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
@@ -27,8 +25,4 @@ public class Skills {
     private String category;
     @NonNull
     private String description;
-
-
-
-
 }
