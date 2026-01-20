@@ -13,13 +13,11 @@ public class Controller {
         return "Hello world";
     }
 
-    @GetMapping("hi")
+    @GetMapping("/hi")
     int num(){return 7;}
 
-    @PostMapping("/teaching")
-    Skill addTeachingSkills(@RequestBody Skill skill){
+    @PostMapping("/learning")
+    Skill addLearningSkill(@RequestBody Skill skill){
         return skill;
     }
-
-    
 }
