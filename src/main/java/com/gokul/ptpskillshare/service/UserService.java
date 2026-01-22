@@ -24,7 +24,11 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public void deleteUserTeachingSkill(String userId, String skillId){
+
+    public void deleteUserTeachingSkill(String userId, String skillId){}
+
+
+    public void removeTeachingSkill(Long userId){
 
     }
 
