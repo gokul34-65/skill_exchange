@@ -30,9 +30,21 @@ public class User {
     private String bio;
 
     @NonNull
+    @ManyToMany
+    @JoinTable(
+            name = "user_skills_teaching",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "skill_id")
+    )
     private List<Skill> learning;
 
     @NonNull
+    @ManyToMany
+    @JoinTable(
+            name = "user_skills_learning",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "skill_id")
+    )
     private List<Skill> teaching;
 
 

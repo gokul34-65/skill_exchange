@@ -23,5 +23,8 @@ public class UserController {
         return userService.createUser(user);
     }
 
-    
+    @DeleteMapping("/{userId}/{skillId}")
+    public ResponseEntity<String> removeTeachingSkill( @PathVariable String userId, @PathVariable String skillId ){
+        return userService.removeTeachingSkill(userId, skillId);
+    }
 }
