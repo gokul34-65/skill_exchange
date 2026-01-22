@@ -16,8 +16,8 @@ import lombok.NonNull;
 
 public class Skill {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy= GenerationType.UUID)
+    private String id;
     @NonNull
     private String skill_name;
     @NonNull

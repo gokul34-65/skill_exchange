@@ -22,4 +22,10 @@ public class UserController {
     public List<User> createUser(@Valid @RequestBody User user) {
         return userService.createUser(user);
     }
+
+    @DeleteMapping("/{userId}/skills/{skillId}")
+    public ResponseEntity<Void> deleteUserSkill(@PathVariable String userId, @PathVariable s){
+
+    }
 }
+
