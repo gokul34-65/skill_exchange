@@ -1,10 +1,13 @@
 package com.gokul.ptpskillshare.service;
 
+import com.gokul.ptpskillshare.model.Skill;
 import com.gokul.ptpskillshare.model.User;
 import com.gokul.ptpskillshare.repository.UserRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -21,7 +24,7 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public ResponseEntity<Void> deleteUserSkill(String userId, String skillId){
+    public void deleteUserTeachingSkill(String userId, String skillId){
 
     }
 
