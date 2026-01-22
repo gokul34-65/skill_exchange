@@ -20,4 +20,10 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    public void removeTeachingSkill(Long userId){
+        User user  = userRepository.findById(userId)
+                .orElseThrow(()-> new RuntimeException("User not found"));
+         if()
+    }
+
 }

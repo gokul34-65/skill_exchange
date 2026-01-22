@@ -22,4 +22,6 @@ public class UserController {
     public List<User> createUser(@Valid @RequestBody User user) {
         return userService.createUser(user);
     }
+
+    
 }
