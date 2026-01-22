@@ -28,3 +28,4 @@ public class UserController {
         return userService.removeTeachingSkill(userId, skillId);
     }
 }
+

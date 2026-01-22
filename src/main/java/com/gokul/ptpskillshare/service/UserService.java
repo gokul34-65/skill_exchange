@@ -5,6 +5,7 @@ import com.gokul.ptpskillshare.model.User;
 import com.gokul.ptpskillshare.repository.SkillRepository;
 import com.gokul.ptpskillshare.repository.UserRepository;
 import org.apache.coyote.Response;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -27,7 +28,6 @@ public class UserService {
         userRepository.save(user);
         return userRepository.findAll();
     }
-
     public ResponseEntity<String> removeTeachingSkill(String userId , String skillId){
         if(! userRepository.existsById(userId)){
             return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);

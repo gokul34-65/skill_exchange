@@ -17,7 +17,7 @@ public class Controller {
     int num(){return 7;}
 
     @PostMapping("/learning")
-    Skill addLearningSkill(@RequestBody Skill skill){
+    Skill addLearningSkill(@RequestBody Skill skill) {
         return skill;
     }
 
